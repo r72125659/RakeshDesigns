@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Women's Shoes - Rakesh Designs</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <a href="index.html" class="logo">RAKESH DESIGNS</a>
+
+        <nav class="navbar">
+
+            <a href="index.html">Home</a>
+
+            <a href="aboutus.html">About Us</a>
+
+            <!-- Collections Dropdown -->
+            <div class="dropdown">
+                <a href="collections.html">
+                    Collections <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="tshirts.html">T-Shirts</a>
+                    <a href="jackets.html">Jackets</a>
+                    <a href="jeans.html">Jeans</a>
+                    <a href="shoes.html">Shoes</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="bags.html">Bags</a>
+                </div>
+            </div>
+
+            <a href="salesandoffers.html">Sales & Offers</a>
+
+            <!-- Men Dropdown -->
+            <div class="dropdown">
+                <a href="men.html">
+                    Men <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="menshoes.html">Men's Shoes</a>
+                    <a href="menclothing.html">Men's Clothing</a>
+                    <a href="menaccessories.html">Men's Accessories</a>
+                    <a href="mennewarrivals.html">Men's New Arrivals</a>
+                </div>
+            </div>
+
+            <!-- Women Dropdown -->
+            <div class="dropdown">
+                <a href="women.html" class="active">
+                    Women <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="womenshoes.html">Women's Shoes</a>
+                    <a href="womenclothing.html">Women's Clothing</a>
+                    <a href="womenaccessories.html">Women's Accessories</a>
+                    <a href="womennewarrivals.html">Women's New Arrivals</a>
+                </div>
+            </div>
+
+            <a href="contactus.html">Contact Us</a>
+
+        </nav>
+
+        <!-- Header Icons -->
+        <div class="header-icons">
+
+            <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+
+            <i class="fa-regular fa-user"></i>
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <i class="fa-solid fa-bars" id="menuIcon"></i>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= SEARCH BOX ================= -->
+    <div class="search-box" id="searchBox">
+
+        <input type="text"
+            id="searchInput"
+            placeholder="Search products...">
+
+        <button id="searchButton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+    </div>
+
+
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="page-banner">
+
+        <div class="page-banner-content">
+
+            <h1>Women's Shoes</h1>
+
+            <p class="breadcrumb">
+                <a href="index.html">Home</a>
+                /
+                <a href="women.html">Women</a>
+                /
+                Women's Shoes
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INTRO ================= -->
+    <section class="product-section">
+
+        <div class="section-title">
+
+            <h2>Women's Shoe Collection</h2>
+
+            <p>
+                Step into style with our collection of fashionable
+                women's shoes, designed for comfort and confidence.
+            </p>
+
+        </div>
+
+
+        <!-- ================= FILTER ================= -->
+        <div class="product-filter">
+
+            <div class="filter-left">
+                <span>Women's Shoes</span>
+            </div>
+
+            <div class="filter-right">
+
+                <label for="sort">Sort By:</label>
+
+                <select id="sort">
+
+                    <option value="default">Featured</option>
+
+                    <option value="low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high">
+                        Price: High to Low
+                    </option>
+
+                    <option value="new">
+                        Newest
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= PRODUCT GRID ================= -->
+        <div class="product-grid">
+
+
+            <!-- Product 1 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/women-shoes-sneakers.jpg"
+                        alt="Women's Classic Sneakers">
+
+                    <span class="product-label">BEST SELLER</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        Women's Shoes
+                    </p>
+
+                    <h3>Women's Classic Sneakers</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $79.90
+                    </p>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/women-shoes-heels.jpg"
+                        alt="Elegant High Heels">
+
+                    <span class="product-label">NEW</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        Women's Shoes
+                    </p>
+
+                    <h3>Elegant High Heels</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $89.90
+                    </p>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/women-shoes-flats.jpg"
+                        alt="Classic Women's Flats">
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        Women's Shoes
+                    </p>
+
+                    <h3>Classic Women's Flats</h3>
+
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+
+                    <p class="price">
+                        $54.90
+                    </p>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/women-shoes-boots.jpg"
+                        alt="Women's Leather Boots">
+
+                    <span class="product-label">SALE</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        Women's Shoes
+                    </p>
+
+                    <h3>Women's Leather Boots</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $99.90
+                        <span class="old-price">$119.90</span>
+                    </p>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 5 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/women-shoes-sandals.jpg"
+                        alt="Comfort Women's Sandals">
+
+                    <span class="product-label">NEW</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        Women's Shoes
+                    </p>
+
+                    <h3>Comfort Women's Sandals</h3>
+
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+
+                    <p class="price">
+                        $44.90
+                    </p>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 6 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/women-shoes-running.jpg"
+                        alt="Women's Running Shoes">
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        Women's Shoes
+                    </p>
+
+                    <h3>Women's Running Shoes</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $74.90
+                    </p>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 7 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/women-shoes-loafers.jpg"
+                        alt="Women's Premium Loafers">
+
+                    <span class="product-label">TRENDING</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        Women's Shoes
+                    </p>
+
+                    <h3>Women's Premium Loafers</h3>
+
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+
+                    <p class="price">
+                        $69.90
+                    </p>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 8 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/women-shoes-platform.jpg"
+                        alt="Women's Platform Sneakers">
+
+                    <span class="product-label">NEW</span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="product-category">
+                        Women's Shoes
+                    </p>
+
+                    <h3>Women's Platform Sneakers</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $84.90
+                    </p>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROMOTIONAL BANNER ================= -->
+    <section class="promo-banner">
+
+        <div class="promo-content">
+
+            <h2>Step Into Style</h2>
+
+            <p>
+                Discover fashionable footwear made for every
+                occasion, from everyday comfort to elegant evenings.
+            </p>
+
+            <a href="womennewarrivals.html" class="btn">
+                Shop New Arrivals
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="newsletter">
+
+        <div class="newsletter-content">
+
+            <h2>Stay Updated</h2>
+
+            <p>
+                Subscribe to our newsletter for new collections,
+                exclusive offers and special discounts.
+            </p>
+
+            <form class="newsletter-form">
+
+                <input type="email"
+                    placeholder="Enter your email address"
+                    required>
+
+                <button type="submit" class="btn">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <!-- About -->
+            <div class="footer-column">
+
+                <h3>RAKESH DESIGNS</h3>
+
+                <p>
+                    Discover modern fashion, quality clothing and
+                    stylish accessories designed for every occasion.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="collections.html">Collections</a>
+                <a href="salesandoffers.html">Sales & Offers</a>
+                <a href="contactus.html">Contact Us</a>
+
+            </div>
+
+
+            <!-- Women -->
+            <div class="footer-column">
+
+                <h3>Women</h3>
+
+                <a href="womenshoes.html">Women's Shoes</a>
+                <a href="womenclothing.html">Women's Clothing</a>
+                <a href="womenaccessories.html">Women's Accessories</a>
+                <a href="womennewarrivals.html">Women's New Arrivals</a>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-column">
+
+                <h3>Contact Us</h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Singapore
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +65 1234 5678
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    info@rakeshdesigns.com
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Rakesh Designs. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

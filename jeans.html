@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jeans - Rakesh Designs</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="logo">
+            <a href="index.html">RAKESH DESIGNS</a>
+        </div>
+
+        <nav class="navbar">
+
+            <a href="index.html">Home</a>
+
+            <a href="aboutus.html">About Us</a>
+
+            <!-- Collections Dropdown -->
+            <div class="dropdown">
+
+                <a href="collections.html" class="active">
+                    Collections
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+
+                    <a href="tshirts.html">T-Shirts</a>
+                    <a href="jackets.html">Jackets</a>
+                    <a href="jeans.html">Jeans</a>
+                    <a href="shoes.html">Shoes</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="bags.html">Bags</a>
+
+                </div>
+
+            </div>
+
+            <a href="salesandoffers.html">Sales & Offers</a>
+
+            <!-- Men Dropdown -->
+            <div class="dropdown">
+
+                <a href="men.html">
+                    Men
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+
+                    <a href="menshoes.html">Men's Shoes</a>
+                    <a href="menclothing.html">Men's Clothing</a>
+                    <a href="menaccessories.html">Men's Accessories</a>
+                    <a href="mennewarrivals.html">Men's New Arrivals</a>
+
+                </div>
+
+            </div>
+
+            <!-- Women Dropdown -->
+            <div class="dropdown">
+
+                <a href="women.html">
+                    Women
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+
+                    <a href="womenshoes.html">Women's Shoes</a>
+                    <a href="womenclothing.html">Women's Clothing</a>
+                    <a href="womenaccessories.html">Women's Accessories</a>
+                    <a href="womennewarrivals.html">Women's New Arrivals</a>
+
+                </div>
+
+            </div>
+
+            <a href="contactus.html">Contact Us</a>
+
+        </nav>
+
+
+        <!-- Header Icons -->
+        <div class="header-icons">
+
+            <i class="fa-solid fa-magnifying-glass"
+                id="searchIcon"></i>
+
+            <i class="fa-regular fa-user"></i>
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <i class="fa-solid fa-bars"
+                id="menuIcon"></i>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= SEARCH BOX ================= -->
+    <div class="search-box" id="searchBox">
+
+        <input type="text"
+            id="searchInput"
+            placeholder="Search products...">
+
+        <button id="searchButton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+    </div>
+
+
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="page-banner">
+
+        <div class="page-banner-content">
+
+            <h1>JEANS</h1>
+
+            <p>
+                Find your perfect fit with our stylish
+                and comfortable denim collection.
+            </p>
+
+            <div class="breadcrumb">
+
+                <a href="index.html">Home</a>
+
+                <span>/</span>
+
+                <a href="collections.html">Collections</a>
+
+                <span>/</span>
+
+                <span>Jeans</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS SECTION ================= -->
+    <section class="products-section">
+
+        <div class="section-title">
+
+            <span>OUR COLLECTION</span>
+
+            <h2>Premium Denim</h2>
+
+            <p>
+                Explore classic, modern and relaxed-fit jeans
+                created for everyday style.
+            </p>
+
+        </div>
+
+
+        <!-- Product Filter -->
+        <div class="product-filter">
+
+            <div class="filter-left">
+
+                <span>
+                    Showing 8 Products
+                </span>
+
+            </div>
+
+            <div class="filter-right">
+
+                <label for="sortProducts">
+                    Sort By:
+                </label>
+
+                <select id="sortProducts">
+
+                    <option value="default">
+                        Featured
+                    </option>
+
+                    <option value="low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high">
+                        Price: High to Low
+                    </option>
+
+                    <option value="new">
+                        Newest
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= PRODUCT GRID ================= -->
+        <div class="product-grid">
+
+
+            <!-- Product 1 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/jeans-1.jpg"
+                        alt="Classic Blue Jeans">
+
+                    <span class="product-label">
+                        BEST SELLER
+                    </span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Jeans
+                    </span>
+
+                    <h3>Classic Blue Jeans</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $59.90
+                    </p>
+
+                    <button class="add-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/jeans-2.jpg"
+                        alt="Slim Fit Dark Jeans">
+
+                    <span class="product-label">
+                        NEW
+                    </span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Jeans
+                    </span>
+
+                    <h3>Slim Fit Dark Jeans</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $64.90
+                    </p>
+
+                    <button class="add-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/jeans-3.jpg"
+                        alt="Relaxed Fit Jeans">
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Jeans
+                    </span>
+
+                    <h3>Relaxed Fit Jeans</h3>
+
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+
+                    <p class="price">
+                        $69.90
+                    </p>
+
+                    <button class="add-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/jeans-4.jpg"
+                        alt="Straight Leg Denim">
+
+                    <span class="product-label">
+                        TRENDING
+                    </span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Jeans
+                    </span>
+
+                    <h3>Straight Leg Denim</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $62.90
+                    </p>
+
+                    <button class="add-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 5 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/jeans-5.jpg"
+                        alt="Vintage Wash Jeans">
+
+                    <span class="product-label">
+                        SALE
+                    </span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Jeans
+                    </span>
+
+                    <h3>Vintage Wash Jeans</h3>
+
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+
+                    <p class="price">
+
+                        <span class="old-price">
+                            $74.90
+                        </span>
+
+                        $54.90
+
+                    </p>
+
+                    <button class="add-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 6 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/jeans-6.jpg"
+                        alt="Black Skinny Jeans">
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Jeans
+                    </span>
+
+                    <h3>Black Skinny Jeans</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $67.90
+                    </p>
+
+                    <button class="add-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 7 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/jeans-7.jpg"
+                        alt="Wide Leg Denim">
+
+                    <span class="product-label">
+                        NEW
+                    </span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Jeans
+                    </span>
+
+                    <h3>Wide Leg Denim</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $71.90
+                    </p>
+
+                    <button class="add-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 8 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/jeans-8.jpg"
+                        alt="Premium Stretch Jeans">
+
+                    <span class="product-label">
+                        PREMIUM
+                    </span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Jeans
+                    </span>
+
+                    <h3>Premium Stretch Jeans</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $79.90
+                    </p>
+
+                    <button class="add-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROMO BANNER ================= -->
+    <section class="promo-banner">
+
+        <div class="promo-content">
+
+            <span>DENIM COLLECTION</span>
+
+            <h2>
+                FIND YOUR PERFECT FIT
+            </h2>
+
+            <p>
+                Classic denim styles made for
+                your everyday wardrobe.
+            </p>
+
+            <a href="collections.html" class="btn">
+                EXPLORE MORE
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="newsletter">
+
+        <div class="newsletter-content">
+
+            <h2>
+                Subscribe To Our Newsletter
+            </h2>
+
+            <p>
+                Get the latest fashion updates,
+                new arrivals and exclusive offers.
+            </p>
+
+            <form class="newsletter-form">
+
+                <input type="email"
+                    placeholder="Enter your email address"
+                    required>
+
+                <button type="submit" class="btn">
+                    SUBSCRIBE
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- About -->
+            <div class="footer-column">
+
+                <h3>RAKESH DESIGNS</h3>
+
+                <p>
+                    Discover modern fashion, timeless styles
+                    and premium collections designed for everyone.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>QUICK LINKS</h3>
+
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="collections.html">Collections</a>
+                <a href="salesandoffers.html">Sales & Offers</a>
+                <a href="contactus.html">Contact Us</a>
+
+            </div>
+
+
+            <!-- Collections -->
+            <div class="footer-column">
+
+                <h3>COLLECTIONS</h3>
+
+                <a href="tshirts.html">T-Shirts</a>
+                <a href="jackets.html">Jackets</a>
+                <a href="jeans.html">Jeans</a>
+                <a href="shoes.html">Shoes</a>
+                <a href="accessories.html">Accessories</a>
+                <a href="bags.html">Bags</a>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-column">
+
+                <h3>CONTACT</h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Singapore
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +65 1234 5678
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    info@rakeshdesigns.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Rakesh Designs.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

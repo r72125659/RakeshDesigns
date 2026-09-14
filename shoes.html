@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shoes - Rakesh Designs</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="logo">
+            <a href="index.html">RAKESH DESIGNS</a>
+        </div>
+
+        <nav class="navbar">
+
+            <a href="index.html">Home</a>
+
+            <a href="aboutus.html">About Us</a>
+
+            <!-- Collections Dropdown -->
+            <div class="dropdown">
+
+                <a href="collections.html" class="active">
+                    Collections
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+
+                    <a href="tshirts.html">T-Shirts</a>
+                    <a href="jackets.html">Jackets</a>
+                    <a href="jeans.html">Jeans</a>
+                    <a href="shoes.html">Shoes</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="bags.html">Bags</a>
+
+                </div>
+
+            </div>
+
+            <a href="salesandoffers.html">Sales & Offers</a>
+
+            <!-- Men Dropdown -->
+            <div class="dropdown">
+
+                <a href="men.html">
+                    Men
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+
+                    <a href="menshoes.html">Men's Shoes</a>
+                    <a href="menclothing.html">Men's Clothing</a>
+                    <a href="menaccessories.html">Men's Accessories</a>
+                    <a href="mennewarrivals.html">Men's New Arrivals</a>
+
+                </div>
+
+            </div>
+
+            <!-- Women Dropdown -->
+            <div class="dropdown">
+
+                <a href="women.html">
+                    Women
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+
+                    <a href="womenshoes.html">Women's Shoes</a>
+                    <a href="womenclothing.html">Women's Clothing</a>
+                    <a href="womenaccessories.html">Women's Accessories</a>
+                    <a href="womennewarrivals.html">Women's New Arrivals</a>
+
+                </div>
+
+            </div>
+
+            <a href="contactus.html">Contact Us</a>
+
+        </nav>
+
+
+        <!-- Header Icons -->
+        <div class="header-icons">
+
+            <i class="fa-solid fa-magnifying-glass"
+                id="searchIcon"></i>
+
+            <i class="fa-regular fa-user"></i>
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <i class="fa-solid fa-bars"
+                id="menuIcon"></i>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= SEARCH BOX ================= -->
+    <div class="search-box" id="searchBox">
+
+        <input type="text"
+            id="searchInput"
+            placeholder="Search products...">
+
+        <button id="searchButton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+    </div>
+
+
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="page-banner">
+
+        <div class="page-banner-content">
+
+            <h1>SHOES</h1>
+
+            <p>
+                Step into style with our collection of
+                comfortable and fashionable footwear.
+            </p>
+
+            <div class="breadcrumb">
+
+                <a href="index.html">Home</a>
+
+                <span>/</span>
+
+                <a href="collections.html">Collections</a>
+
+                <span>/</span>
+
+                <span>Shoes</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTS SECTION ================= -->
+    <section class="products-section">
+
+        <div class="section-title">
+
+            <span>OUR COLLECTION</span>
+
+            <h2>Premium Footwear</h2>
+
+            <p>
+                Discover sneakers, casual shoes and premium
+                footwear designed for everyday comfort.
+            </p>
+
+        </div>
+
+
+        <!-- Product Filter -->
+        <div class="product-filter">
+
+            <div class="filter-left">
+
+                <span>
+                    Showing 8 Products
+                </span>
+
+            </div>
+
+            <div class="filter-right">
+
+                <label for="sortProducts">
+                    Sort By:
+                </label>
+
+                <select id="sortProducts">
+
+                    <option value="default">
+                        Featured
+                    </option>
+
+                    <option value="low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high">
+                        Price: High to Low
+                    </option>
+
+                    <option value="new">
+                        Newest
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= PRODUCT GRID ================= -->
+        <div class="product-grid">
+
+
+            <!-- Product 1 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/shoes-1.jpg"
+                        alt="Classic White Sneakers">
+
+                    <span class="product-label">
+                        BEST SELLER
+                    </span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Shoes
+                    </span>
+
+                    <h3>Classic White Sneakers</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $79.90
+                    </p>
+
+                    <button class="add-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/shoes-2.jpg"
+                        alt="Urban Running Shoes">
+
+                    <span class="product-label">
+                        NEW
+                    </span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Shoes
+                    </span>
+
+                    <h3>Urban Running Shoes</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $89.90
+                    </p>
+
+                    <button class="add-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/shoes-3.jpg"
+                        alt="Classic Leather Shoes">
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Shoes
+                    </span>
+
+                    <h3>Classic Leather Shoes</h3>
+
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+
+                    <p class="price">
+                        $109.90
+                    </p>
+
+                    <button class="add-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/shoes-4.jpg"
+                        alt="Street Style Sneakers">
+
+                    <span class="product-label">
+                        TRENDING
+                    </span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Shoes
+                    </span>
+
+                    <h3>Street Style Sneakers</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $94.90
+                    </p>
+
+                    <button class="add-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 5 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/shoes-5.jpg"
+                        alt="Casual Slip-On Shoes">
+
+                    <span class="product-label">
+                        SALE
+                    </span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Shoes
+                    </span>
+
+                    <h3>Casual Slip-On Shoes</h3>
+
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+
+                    <p class="price">
+
+                        <span class="old-price">
+                            $79.90
+                        </span>
+
+                        $59.90
+
+                    </p>
+
+                    <button class="add-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 6 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/shoes-6.jpg"
+                        alt="Premium Court Sneakers">
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Shoes
+                    </span>
+
+                    <h3>Premium Court Sneakers</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $99.90
+                    </p>
+
+                    <button class="add-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 7 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/shoes-7.jpg"
+                        alt="Minimal Canvas Sneakers">
+
+                    <span class="product-label">
+                        NEW
+                    </span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Shoes
+                    </span>
+
+                    <h3>Minimal Canvas Sneakers</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $69.90
+                    </p>
+
+                    <button class="add-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 8 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/shoes-8.jpg"
+                        alt="Premium High Top Sneakers">
+
+                    <span class="product-label">
+                        PREMIUM
+                    </span>
+
+                    <button class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Shoes
+                    </span>
+
+                    <h3>Premium High Top Sneakers</h3>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p class="price">
+                        $119.90
+                    </p>
+
+                    <button class="add-cart">
+                        ADD TO CART
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROMO BANNER ================= -->
+    <section class="promo-banner">
+
+        <div class="promo-content">
+
+            <span>STEP INTO STYLE</span>
+
+            <h2>
+                WALK WITH CONFIDENCE
+            </h2>
+
+            <p>
+                Complete your outfit with footwear
+                made for modern everyday style.
+            </p>
+
+            <a href="collections.html" class="btn">
+                SHOP COLLECTION
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="newsletter">
+
+        <div class="newsletter-content">
+
+            <h2>
+                Subscribe To Our Newsletter
+            </h2>
+
+            <p>
+                Get the latest fashion updates,
+                new arrivals and exclusive offers.
+            </p>
+
+            <form class="newsletter-form">
+
+                <input type="email"
+                    placeholder="Enter your email address"
+                    required>
+
+                <button type="submit" class="btn">
+                    SUBSCRIBE
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- About -->
+            <div class="footer-column">
+
+                <h3>RAKESH DESIGNS</h3>
+
+                <p>
+                    Discover modern fashion, timeless styles
+                    and premium collections designed for everyone.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>QUICK LINKS</h3>
+
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="collections.html">Collections</a>
+                <a href="salesandoffers.html">Sales & Offers</a>
+                <a href="contactus.html">Contact Us</a>
+
+            </div>
+
+
+            <!-- Collections -->
+            <div class="footer-column">
+
+                <h3>COLLECTIONS</h3>
+
+                <a href="tshirts.html">T-Shirts</a>
+                <a href="jackets.html">Jackets</a>
+                <a href="jeans.html">Jeans</a>
+                <a href="shoes.html">Shoes</a>
+                <a href="accessories.html">Accessories</a>
+                <a href="bags.html">Bags</a>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="footer-column">
+
+                <h3>CONTACT</h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Singapore
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +65 1234 5678
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    info@rakeshdesigns.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Rakesh Designs.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

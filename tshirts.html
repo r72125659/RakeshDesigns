@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rakesh Designs - T-Shirts</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            RAKESH DESIGNS
+        </a>
+
+        <nav class="navbar">
+
+            <a href="index.html">Home</a>
+
+            <a href="aboutus.html">About Us</a>
+
+            <div class="dropdown">
+                <a href="collections.html">Collections</a>
+
+                <div class="dropdown-menu">
+                    <a href="tshirts.html">T-Shirts</a>
+                    <a href="jackets.html">Jackets</a>
+                    <a href="jeans.html">Jeans</a>
+                    <a href="shoes.html">Shoes</a>
+                    <a href="accessories.html">Accessories</a>
+                    <a href="bags.html">Bags</a>
+                </div>
+            </div>
+
+            <a href="salesandoffers.html">Sales & Offers</a>
+
+            <div class="dropdown">
+                <a href="men.html">Men</a>
+
+                <div class="dropdown-menu">
+                    <a href="menshoes.html">Men's Shoes</a>
+                    <a href="menclothing.html">Men's Clothing</a>
+                    <a href="menaccessories.html">Men's Accessories</a>
+                    <a href="mennewarrivals.html">Men's New Arrivals</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="women.html">Women</a>
+
+                <div class="dropdown-menu">
+                    <a href="womenshoes.html">Women's Shoes</a>
+                    <a href="womenclothing.html">Women's Clothing</a>
+                    <a href="womenaccessories.html">Women's Accessories</a>
+                    <a href="womennewarrivals.html">Women's New Arrivals</a>
+                </div>
+            </div>
+
+            <a href="contactus.html">Contact Us</a>
+
+        </nav>
+
+        <div class="header-icons">
+
+            <i class="fa-solid fa-magnifying-glass"
+                id="searchIcon"></i>
+
+            <i class="fa-regular fa-user"></i>
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <i class="fa-solid fa-bars"
+                id="menuIcon"></i>
+
+        </div>
+
+        <!-- Search Box -->
+
+        <div class="search-box" id="searchBox">
+
+            <input type="text"
+                id="searchInput"
+                placeholder="Search products...">
+
+            <button id="searchButton">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE BANNER ================= -->
+
+    <section class="page-banner">
+
+        <div class="page-banner-content">
+
+            <h1>T-Shirts</h1>
+
+            <p>
+                Stylish and comfortable T-shirts for every occasion
+            </p>
+
+            <div class="breadcrumb">
+
+                <a href="index.html">Home</a>
+
+                <span>/</span>
+
+                <a href="collections.html">Collections</a>
+
+                <span>/</span>
+
+                <span>T-Shirts</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= T-SHIRT PRODUCTS ================= -->
+
+    <section>
+
+        <div class="section-title">
+
+            <h2>Our T-Shirts</h2>
+
+            <p>
+                Discover our latest collection of premium,
+                comfortable and stylish T-shirts.
+            </p>
+
+        </div>
+
+
+        <!-- Product Filter -->
+
+        <div class="product-filter">
+
+            <div class="filter-left">
+
+                <span>Showing 8 products</span>
+
+            </div>
+
+            <div class="filter-right">
+
+                <label for="sortProducts">
+                    Sort By:
+                </label>
+
+                <select id="sortProducts">
+
+                    <option value="default">
+                        Featured
+                    </option>
+
+                    <option value="price-low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="price-high">
+                        Price: High to Low
+                    </option>
+
+                    <option value="name">
+                        Name
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product Grid -->
+
+        <div class="product-grid">
+
+
+            <!-- Product 1 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/classic-white-tshirt.jpg"
+                        alt="Classic White T-Shirt">
+
+                    <span class="product-label">
+                        BEST SELLER
+                    </span>
+
+                    <button class="wishlist"
+                        aria-label="Add to wishlist">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        T-Shirts
+                    </div>
+
+                    <h3>
+                        Classic White T-Shirt
+                    </h3>
+
+                    <div class="rating">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                        <span>(45)</span>
+
+                    </div>
+
+                    <div class="price">
+                        $29.90
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 2 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/black-premium-tshirt.jpg"
+                        alt="Black Premium T-Shirt">
+
+                    <span class="product-label new">
+                        NEW
+                    </span>
+
+                    <button class="wishlist"
+                        aria-label="Add to wishlist">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        T-Shirts
+                    </div>
+
+                    <h3>
+                        Black Premium T-Shirt
+                    </h3>
+
+                    <div class="rating">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+
+                        <span>(32)</span>
+
+                    </div>
+
+                    <div class="price">
+                        $34.90
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 3 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/oversized-tshirt.jpg"
+                        alt="Oversized Casual T-Shirt">
+
+                    <span class="product-label">
+                        TRENDING
+                    </span>
+
+                    <button class="wishlist"
+                        aria-label="Add to wishlist">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        T-Shirts
+                    </div>
+
+                    <h3>
+                        Oversized Casual T-Shirt
+                    </h3>
+
+                    <div class="rating">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                        <span>(38)</span>
+
+                    </div>
+
+                    <div class="price">
+                        $39.90
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 4 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/polo-tshirt.jpg"
+                        alt="Classic Polo T-Shirt">
+
+                    <span class="product-label sale">
+                        SALE
+                    </span>
+
+                    <button class="wishlist"
+                        aria-label="Add to wishlist">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        T-Shirts
+                    </div>
+
+                    <h3>
+                        Classic Polo T-Shirt
+                    </h3>
+
+                    <div class="rating">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+
+                        <span>(29)</span>
+
+                    </div>
+
+                    <div class="price">
+
+                        $32.90
+
+                        <span class="old-price">
+                            $44.90
+                        </span>
+
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 5 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/graphic-tshirt.jpg"
+                        alt="Graphic Print T-Shirt">
+
+                    <span class="product-label new">
+                        NEW
+                    </span>
+
+                    <button class="wishlist"
+                        aria-label="Add to wishlist">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        T-Shirts
+                    </div>
+
+                    <h3>
+                        Graphic Print T-Shirt
+                    </h3>
+
+                    <div class="rating">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                        <span>(51)</span>
+
+                    </div>
+
+                    <div class="price">
+                        $36.90
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 6 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/cotton-tshirt.jpg"
+                        alt="Premium Cotton T-Shirt">
+
+                    <button class="wishlist"
+                        aria-label="Add to wishlist">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        T-Shirts
+                    </div>
+
+                    <h3>
+                        Premium Cotton T-Shirt
+                    </h3>
+
+                    <div class="rating">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+
+                        <span>(27)</span>
+
+                    </div>
+
+                    <div class="price">
+                        $31.90
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 7 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/striped-tshirt.jpg"
+                        alt="Striped Casual T-Shirt">
+
+                    <span class="product-label">
+                        POPULAR
+                    </span>
+
+                    <button class="wishlist"
+                        aria-label="Add to wishlist">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        T-Shirts
+                    </div>
+
+                    <h3>
+                        Striped Casual T-Shirt
+                    </h3>
+
+                    <div class="rating">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+
+                        <span>(34)</span>
+
+                    </div>
+
+                    <div class="price">
+                        $33.90
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 8 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="images/v-neck-tshirt.jpg"
+                        alt="Premium V-Neck T-Shirt">
+
+                    <span class="product-label new">
+                        NEW
+                    </span>
+
+                    <button class="wishlist"
+                        aria-label="Add to wishlist">
+
+                        <i class="fa-regular fa-heart"></i>
+
+                    </button>
+
+                </div>
+
+                <div class="product-info">
+
+                    <div class="product-category">
+                        T-Shirts
+                    </div>
+
+                    <h3>
+                        Premium V-Neck T-Shirt
+                    </h3>
+
+                    <div class="rating">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                        <span>(41)</span>
+
+                    </div>
+
+                    <div class="price">
+                        $35.90
+                    </div>
+
+                    <button class="add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROMO BANNER ================= -->
+
+    <section class="promo-banner">
+
+        <div class="promo-content">
+
+            <h2>
+                Upgrade Your T-Shirt Collection
+            </h2>
+
+            <p>
+                Get stylish everyday T-shirts designed
+                for comfort, quality and modern fashion.
+            </p>
+
+            <a href="newarrivals.html" class="btn">
+                View New Arrivals
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+
+        <div class="newsletter-content">
+
+            <h2>
+                Stay Updated
+            </h2>
+
+            <p>
+                Subscribe to our newsletter and receive
+                the latest fashion updates and special offers.
+            </p>
+
+            <form class="newsletter-form">
+
+                <input type="email"
+                    placeholder="Enter your email address"
+                    required>
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <!-- About -->
+
+            <div class="footer-column">
+
+                <h3>
+                    RAKESH DESIGNS
+                </h3>
+
+                <p>
+                    Discover modern fashion, premium quality
+                    clothing and stylish accessories at
+                    Rakesh Designs.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="aboutus.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="collections.html">
+                            Collections
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="salesandoffers.html">
+                            Sales & Offers
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contactus.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Collections -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Collections
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="tshirts.html">
+                            T-Shirts
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="jackets.html">
+                            Jackets
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="jeans.html">
+                            Jeans
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shoes.html">
+                            Shoes
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="accessories.html">
+                            Accessories
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="bags.html">
+                            Bags
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Singapore
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +65 1234 5678
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    info@rakeshdesigns.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Rakesh Designs.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
