@@ -1,756 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Women's New Arrivals - Rakesh Designs</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .product-card {
+            border: 1px solid #e2d9cd;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .product-title {
+            font-size: 1.1rem;
+            margin: 10px 0 5px 0;
+            font-weight: bold;
+        }
+        .price {
+            font-weight: bold;
+            color: #2b2623;
+            margin: 5px 0;
+        }
+        .btn-add {
+            background-color: #2b2623;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
 </head>
-
 <body>
 
-    <!-- ================= HEADER ================= -->
-    <header class="header">
-
-        <a href="index.html" class="logo">RAKESH DESIGNS</a>
-
-        <nav class="navbar">
-
-            <a href="index.html">Home</a>
-
-            <a href="aboutus.html">About Us</a>
-
-            <!-- Collections Dropdown -->
-            <div class="dropdown">
-
-                <a href="collections.html">
-                    Collections
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-
-                <div class="dropdown-menu">
-
-                    <a href="tshirts.html">T-Shirts</a>
-                    <a href="jackets.html">Jackets</a>
-                    <a href="jeans.html">Jeans</a>
-                    <a href="shoes.html">Shoes</a>
-                    <a href="accessories.html">Accessories</a>
-                    <a href="bags.html">Bags</a>
-
-                </div>
-
-            </div>
-
-            <a href="salesandoffers.html">Sales & Offers</a>
-
-            <!-- Men Dropdown -->
-            <div class="dropdown">
-
-                <a href="men.html">
-                    Men
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-
-                <div class="dropdown-menu">
-
-                    <a href="menshoes.html">Men's Shoes</a>
-                    <a href="menclothing.html">Men's Clothing</a>
-                    <a href="menaccessories.html">Men's Accessories</a>
-                    <a href="mennewarrivals.html">Men's New Arrivals</a>
-
-                </div>
-
-            </div>
-
-            <!-- Women Dropdown -->
-            <div class="dropdown">
-
-                <a href="women.html" class="active">
-                    Women
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-
-                <div class="dropdown-menu">
-
-                    <a href="womenshoes.html">Women's Shoes</a>
-                    <a href="womenclothing.html">Women's Clothing</a>
-                    <a href="womenaccessories.html">Women's Accessories</a>
-                    <a href="womennewarrivals.html">Women's New Arrivals</a>
-
-                </div>
-
-            </div>
-
-            <a href="contactus.html">Contact Us</a>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sales & Offers</a></li>
+                <li><a href="menclothing.html">Men</a></li>
+                <li><a href="womenclothing.html">Women</a></li>
+                <li><a href="womennewarrivals.html">New Arrivals</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
         </nav>
-
-
-        <!-- Header Icons -->
-        <div class="header-icons">
-
-            <i class="fa-solid fa-magnifying-glass"
-                id="searchIcon"></i>
-
-            <i class="fa-regular fa-user"></i>
-
-            <i class="fa-solid fa-bag-shopping"></i>
-
-            <i class="fa-solid fa-bars"
-                id="menuIcon"></i>
-
-        </div>
-
     </header>
 
+    <main style="padding: 20px;">
+        <h1>Women's New Arrivals</h1>
+        <p>Check out our latest trending fashion items for women.</p>
 
-    <!-- ================= SEARCH BOX ================= -->
-    <div class="search-box" id="searchBox">
-
-        <input type="text"
-            id="searchInput"
-            placeholder="Search products...">
-
-        <button id="searchButton">
-
-            <i class="fa-solid fa-magnifying-glass"></i>
-
-        </button>
-
-    </div>
-
-
-    <!-- ================= PAGE BANNER ================= -->
-    <section class="page-banner">
-
-        <div class="page-banner-content">
-
-            <h1>Women's New Arrivals</h1>
-
-            <p class="breadcrumb">
-
-                <a href="index.html">Home</a>
-                /
-                <a href="women.html">Women</a>
-                /
-                Women's New Arrivals
-
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= INTRO ================= -->
-    <section class="product-section">
-
-        <div class="section-title">
-
-            <h2>Latest Women's Arrivals</h2>
-
-            <p>
-                Discover our newest women's fashion collection,
-                featuring fresh styles, modern designs and the
-                latest seasonal trends.
-            </p>
-
-        </div>
-
-
-        <!-- ================= FILTER ================= -->
-        <div class="product-filter">
-
-            <div class="filter-left">
-
-                <span>Latest Women's Collection</span>
-
-            </div>
-
-
-            <div class="filter-right">
-
-                <label for="sort">
-                    Sort By:
-                </label>
-
-                <select id="sort">
-
-                    <option value="default">
-                        Featured
-                    </option>
-
-                    <option value="new">
-                        Newest
-                    </option>
-
-                    <option value="low">
-                        Price: Low to High
-                    </option>
-
-                    <option value="high">
-                        Price: High to Low
-                    </option>
-
-                </select>
-
-            </div>
-
-        </div>
-
-
-        <!-- ================= PRODUCT GRID ================= -->
         <div class="product-grid">
-
-
-            <!-- Product 1 -->
             <div class="product-card">
-
-                <div class="product-image">
-
-                    <img src="images/women-new-dress.jpg"
-                        alt="Women's New Elegant Dress">
-
-                    <span class="product-label">
-                        NEW
-                    </span>
-
-                    <button class="wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        Women's Clothing
-                    </p>
-
-                    <h3>New Elegant Dress</h3>
-
-                    <div class="rating">
-                        ★★★★★
-                    </div>
-
-                    <p class="price">
-                        $74.90
-                    </p>
-
-                    <button class="add-cart">
-                        Add to Cart
-                    </button>
-
-                </div>
-
+                <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600&auto=format&fit=crop" alt="Summer Floral Dress">
+                <div class="product-title">Summer Floral Dress</div>
+                <div>⭐⭐⭐⭐⭐</div>
+                <div class="price">$74.90</div>
+                <button class="btn-add">Add to Cart</button>
             </div>
 
-
-            <!-- Product 2 -->
             <div class="product-card">
-
-                <div class="product-image">
-
-                    <img src="images/women-new-blouse.jpg"
-                        alt="Women's New Premium Blouse">
-
-                    <span class="product-label">
-                        NEW
-                    </span>
-
-                    <button class="wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        Women's Clothing
-                    </p>
-
-                    <h3>New Premium Blouse</h3>
-
-                    <div class="rating">
-                        ★★★★★
-                    </div>
-
-                    <p class="price">
-                        $54.90
-                    </p>
-
-                    <button class="add-cart">
-                        Add to Cart
-                    </button>
-
-                </div>
-
+                <img src="https://images.unsplash.com/photo-1548883354-7622d03aca27?w=600&auto=format&fit=crop" alt="Modern Winter Coat">
+                <div class="product-title">Modern Winter Coat</div>
+                <div>⭐⭐⭐⭐⭐</div>
+                <div class="price">$129.90</div>
+                <button class="btn-add">Add to Cart</button>
             </div>
 
-
-            <!-- Product 3 -->
             <div class="product-card">
-
-                <div class="product-image">
-
-                    <img src="images/women-new-jeans.jpg"
-                        alt="Women's New Slim Jeans">
-
-                    <span class="product-label">
-                        NEW
-                    </span>
-
-                    <button class="wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        Women's Clothing
-                    </p>
-
-                    <h3>Women's Slim Jeans</h3>
-
-                    <div class="rating">
-                        ★★★★☆
-                    </div>
-
-                    <p class="price">
-                        $64.90
-                    </p>
-
-                    <button class="add-cart">
-                        Add to Cart
-                    </button>
-
-                </div>
-
+                <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&auto=format&fit=crop" alt="Trendy Top">
+                <div class="product-title">Trendy Stylish Top</div>
+                <div>⭐⭐⭐⭐⭐</div>
+                <div class="price">$39.90</div>
+                <button class="btn-add">Add to Cart</button>
             </div>
 
-
-            <!-- Product 4 -->
             <div class="product-card">
-
-                <div class="product-image">
-
-                    <img src="images/women-new-shoes.jpg"
-                        alt="Women's New Fashion Shoes">
-
-                    <span class="product-label">
-                        NEW
-                    </span>
-
-                    <button class="wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        Women's Shoes
-                    </p>
-
-                    <h3>Women's Fashion Shoes</h3>
-
-                    <div class="rating">
-                        ★★★★★
-                    </div>
-
-                    <p class="price">
-                        $84.90
-                    </p>
-
-                    <button class="add-cart">
-                        Add to Cart
-                    </button>
-
-                </div>
-
+                <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?w=600&auto=format&fit=crop" alt="Designer Shoulder Bag">
+                <div class="product-title">Designer Shoulder Bag</div>
+                <div>⭐⭐⭐⭐⭐</div>
+                <div class="price">$89.90</div>
+                <button class="btn-add">Add to Cart</button>
             </div>
-
-
-            <!-- Product 5 -->
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <img src="images/women-new-handbag.jpg"
-                        alt="Women's New Handbag">
-
-                    <span class="product-label">
-                        NEW
-                    </span>
-
-                    <button class="wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        Women's Accessories
-                    </p>
-
-                    <h3>Women's New Handbag</h3>
-
-                    <div class="rating">
-                        ★★★★★
-                    </div>
-
-                    <p class="price">
-                        $79.90
-                    </p>
-
-                    <button class="add-cart">
-                        Add to Cart
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- Product 6 -->
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <img src="images/women-new-watch.jpg"
-                        alt="Women's New Fashion Watch">
-
-                    <span class="product-label">
-                        NEW
-                    </span>
-
-                    <button class="wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        Women's Accessories
-                    </p>
-
-                    <h3>Women's Fashion Watch</h3>
-
-                    <div class="rating">
-                        ★★★★☆
-                    </div>
-
-                    <p class="price">
-                        $69.90
-                    </p>
-
-                    <button class="add-cart">
-                        Add to Cart
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- Product 7 -->
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <img src="images/women-new-sunglasses.jpg"
-                        alt="Women's New Sunglasses">
-
-                    <span class="product-label">
-                        TRENDING
-                    </span>
-
-                    <button class="wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        Women's Accessories
-                    </p>
-
-                    <h3>Women's Trendy Sunglasses</h3>
-
-                    <div class="rating">
-                        ★★★★★
-                    </div>
-
-                    <p class="price">
-                        $44.90
-                    </p>
-
-                    <button class="add-cart">
-                        Add to Cart
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- Product 8 -->
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <img src="images/women-new-sneakers.jpg"
-                        alt="Women's New Sneakers">
-
-                    <span class="product-label">
-                        NEW
-                    </span>
-
-                    <button class="wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        Women's Shoes
-                    </p>
-
-                    <h3>Women's New Sneakers</h3>
-
-                    <div class="rating">
-                        ★★★★★
-                    </div>
-
-                    <p class="price">
-                        $89.90
-                    </p>
-
-                    <button class="add-cart">
-                        Add to Cart
-                    </button>
-
-                </div>
-
-            </div>
-
         </div>
-
-    </section>
-
-
-    <!-- ================= PROMOTIONAL BANNER ================= -->
-    <section class="promo-banner">
-
-        <div class="promo-content">
-
-            <h2>Fresh Fashion Has Arrived</h2>
-
-            <p>
-                Be the first to discover our newest women's styles
-                and upgrade your wardrobe with fresh fashion.
-            </p>
-
-            <a href="womenclothing.html" class="btn">
-                Shop Women's Clothing
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= NEWSLETTER ================= -->
-    <section class="newsletter">
-
-        <div class="newsletter-content">
-
-            <h2>Stay Updated</h2>
-
-            <p>
-                Subscribe to our newsletter for new arrivals,
-                exclusive offers and special discounts.
-            </p>
-
-            <form class="newsletter-form">
-
-                <input type="email"
-                    placeholder="Enter your email address"
-                    required>
-
-                <button type="submit" class="btn">
-                    Subscribe
-                </button>
-
-            </form>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= FOOTER ================= -->
-    <footer class="footer">
-
-        <div class="footer-container">
-
-
-            <!-- About -->
-            <div class="footer-column">
-
-                <h3>RAKESH DESIGNS</h3>
-
-                <p>
-                    Discover modern fashion, quality clothing and
-                    stylish accessories designed for every occasion.
-                </p>
-
-            </div>
-
-
-            <!-- Quick Links -->
-            <div class="footer-column">
-
-                <h3>Quick Links</h3>
-
-                <a href="index.html">Home</a>
-                <a href="aboutus.html">About Us</a>
-                <a href="collections.html">Collections</a>
-                <a href="salesandoffers.html">Sales & Offers</a>
-                <a href="contactus.html">Contact Us</a>
-
-            </div>
-
-
-            <!-- Women -->
-            <div class="footer-column">
-
-                <h3>Women</h3>
-
-                <a href="womenshoes.html">
-                    Women's Shoes
-                </a>
-
-                <a href="womenclothing.html">
-                    Women's Clothing
-                </a>
-
-                <a href="womenaccessories.html">
-                    Women's Accessories
-                </a>
-
-                <a href="womennewarrivals.html">
-                    Women's New Arrivals
-                </a>
-
-            </div>
-
-
-            <!-- Contact -->
-            <div class="footer-column">
-
-                <h3>Contact Us</h3>
-
-                <p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    Singapore
-                </p>
-
-                <p>
-                    <i class="fa-solid fa-phone"></i>
-                    +65 1234 5678
-                </p>
-
-                <p>
-                    <i class="fa-solid fa-envelope"></i>
-                    info@rakeshdesigns.com
-                </p>
-
-
-                <div class="social-icons">
-
-                    <a href="#">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-
-            <p>
-                &copy; 2026 Rakesh Designs. All Rights Reserved.
-            </p>
-
-        </div>
-
-    </footer>
-
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    </main>
 
 </body>
-
 </html>
