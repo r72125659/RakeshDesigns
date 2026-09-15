@@ -1,688 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Men's Collection - Rakesh Designs</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .category-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .category-card {
+            display: flex;
+            align-items: center;
+            background-color: #ede4d8;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .category-card img {
+            width: 250px;
+            height: 160px;
+            object-fit: cover;
+        }
+        .category-info {
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .category-info h3 {
+            margin: 0 0 5px 0;
+            color: #2b2623;
+            font-size: 1.4rem;
+        }
+        .category-info p {
+            margin: 0 0 10px 0;
+            color: #6e655f;
+            font-size: 0.9rem;
+        }
+        .shop-now-btn {
+            display: inline-block;
+            color: #2b2623;
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 2px solid #2b2623;
+            padding-bottom: 2px;
+        }
+    </style>
 </head>
-
 <body>
 
-    <!-- ================= HEADER ================= -->
-    <header class="header">
-
-        <div class="logo">
-            <a href="index.html">RAKESH DESIGNS</a>
-        </div>
-
-        <nav class="navbar">
-
-            <a href="index.html">Home</a>
-
-            <a href="aboutus.html">About Us</a>
-
-            <div class="dropdown">
-
-                <a href="collections.html">
-                    Collections
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-
-                <div class="dropdown-menu">
-
-                    <a href="tshirts.html">T-Shirts</a>
-                    <a href="jackets.html">Jackets</a>
-                    <a href="jeans.html">Jeans</a>
-                    <a href="shoes.html">Shoes</a>
-                    <a href="accessories.html">Accessories</a>
-                    <a href="bags.html">Bags</a>
-
-                </div>
-
-            </div>
-
-            <a href="salesandoffers.html">
-                Sales & Offers
-            </a>
-
-            <div class="dropdown">
-
-                <a href="men.html" class="active">
-                    Men
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-
-                <div class="dropdown-menu">
-
-                    <a href="menshoes.html">Shoes</a>
-                    <a href="menclothing.html">Clothing</a>
-                    <a href="menaccessories.html">Accessories</a>
-                    <a href="mennewarrivals.html">New Arrivals</a>
-
-                </div>
-
-            </div>
-
-            <div class="dropdown">
-
-                <a href="women.html">
-                    Women
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-
-                <div class="dropdown-menu">
-
-                    <a href="womenshoes.html">Shoes</a>
-                    <a href="womenclothing.html">Clothing</a>
-                    <a href="womenaccessories.html">Accessories</a>
-                    <a href="womennewarrivals.html">New Arrivals</a>
-
-                </div>
-
-            </div>
-
-            <a href="contactus.html">
-                Contact Us
-            </a>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sales & Offers</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="womenclothing.html">Women</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
         </nav>
-
-
-        <div class="header-icons">
-
-            <i class="fa-solid fa-magnifying-glass"
-               id="searchIcon"></i>
-
-            <i class="fa-regular fa-user"></i>
-
-            <i class="fa-solid fa-bag-shopping"></i>
-
-            <i class="fa-solid fa-bars"
-               id="menuIcon"></i>
-
-        </div>
-
     </header>
 
+    <main style="padding: 20px;">
+        <h1 style="text-align: center;">FOR MEN</h1>
+        <p style="text-align: center; color: #6e655f;">Apparel & accessories designed for every occasion.</p>
 
-    <!-- ================= SEARCH BOX ================= -->
-    <div class="search-box" id="searchBox">
-
-        <input type="text"
-               id="searchInput"
-               placeholder="Search men's products...">
-
-        <button id="searchButton">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-
-    </div>
-
-
-    <!-- ================= PAGE BANNER ================= -->
-    <section class="page-banner men-banner">
-
-        <div class="page-banner-content">
-
-            <p>MEN'S COLLECTION</p>
-
-            <h1>
-                MEN
-            </h1>
-
-            <div class="breadcrumb">
-
-                <a href="index.html">
-                    Home
-                </a>
-
-                <span>/</span>
-
-                <span>
-                    Men
-                </span>
-
+        <div class="category-container">
+            <!-- Men Clothing Banner -->
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?w=600&auto=format&fit=crop" alt="Men Clothing">
+                <div class="category-info">
+                    <p>MEN'S FASHION</p>
+                    <h3>CLOTHING</h3>
+                    <a href="menclothing.html" class="shop-now-btn">SHOP NOW →</a>
+                </div>
             </div>
 
-        </div>
-
-    </section>
-
-
-    <!-- ================= INTRO ================= -->
-    <section class="category-intro">
-
-        <div class="section-title">
-
-            <p>SHOP MEN</p>
-
-            <h2>
-                MODERN STYLE FOR MEN
-            </h2>
-
-            <span>
-                Discover clothing, shoes and accessories
-                designed for every occasion.
-            </span>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= MEN CATEGORIES ================= -->
-    <section class="men-categories">
-
-        <div class="category-grid">
-
-
-            <!-- MEN CLOTHING -->
-            <a href="menclothing.html"
-               class="category-card">
-
-                <div class="category-image">
-
-                    <img src="images/men-clothing.jpg"
-                         alt="Men Clothing">
-
+            <!-- Men Shoes Banner -->
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600&auto=format&fit=crop" alt="Men Shoes">
+                <div class="category-info">
+                    <p>MEN'S FOOTWEAR</p>
+                    <h3>SHOES</h3>
+                    <a href="menshoes.html" class="shop-now-btn">SHOP NOW →</a>
                 </div>
-
-                <div class="category-content">
-
-                    <p>
-                        MEN'S FASHION
-                    </p>
-
-                    <h3>
-                        CLOTHING
-                    </h3>
-
-                    <span>
-                        SHOP NOW →
-                    </span>
-
-                </div>
-
-            </a>
-
-
-            <!-- MEN SHOES -->
-            <a href="menshoes.html"
-               class="category-card">
-
-                <div class="category-image">
-
-                    <img src="images/men-shoes.jpg"
-                         alt="Men Shoes">
-
-                </div>
-
-                <div class="category-content">
-
-                    <p>
-                        MEN'S FOOTWEAR
-                    </p>
-
-                    <h3>
-                        SHOES
-                    </h3>
-
-                    <span>
-                        SHOP NOW →
-                    </span>
-
-                </div>
-
-            </a>
-
-
-            <!-- MEN ACCESSORIES -->
-            <a href="menaccessories.html"
-               class="category-card">
-
-                <div class="category-image">
-
-                    <img src="images/men-accessories.jpg"
-                         alt="Men Accessories">
-
-                </div>
-
-                <div class="category-content">
-
-                    <p>
-                        COMPLETE YOUR LOOK
-                    </p>
-
-                    <h3>
-                        ACCESSORIES
-                    </h3>
-
-                    <span>
-                        SHOP NOW →
-                    </span>
-
-                </div>
-
-            </a>
-
-
-            <!-- MEN NEW ARRIVALS -->
-            <a href="mennewarrivals.html"
-               class="category-card">
-
-                <div class="category-image">
-
-                    <img src="images/men-new-arrivals.jpg"
-                         alt="Men New Arrivals">
-
-                </div>
-
-                <div class="category-content">
-
-                    <p>
-                        JUST ARRIVED
-                    </p>
-
-                    <h3>
-                        NEW ARRIVALS
-                    </h3>
-
-                    <span>
-                        SHOP NOW →
-                    </span>
-
-                </div>
-
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= FEATURED MEN PRODUCTS ================= -->
-    <section class="products-section">
-
-        <div class="section-title">
-
-            <p>MEN'S PICKS</p>
-
-            <h2>
-                FEATURED PRODUCTS
-            </h2>
-
-            <span>
-                Popular styles selected especially for you.
-            </span>
-
-        </div>
-
-
-        <div class="product-grid">
-
-
-            <!-- PRODUCT 1 -->
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <span class="product-label">
-                        NEW
-                    </span>
-
-                    <img src="images/men-product1.jpg"
-                         alt="Men T-Shirt">
-
-                    <button class="wishlist">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-
-                </div>
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        T-SHIRTS
-                    </p>
-
-                    <h3>
-                        Premium Cotton T-Shirt
-                    </h3>
-
-                    <div class="price">
-                        $49.90
-                    </div>
-
-                    <button class="add-cart">
-                        ADD TO CART
-                    </button>
-
-                </div>
-
             </div>
 
-
-            <!-- PRODUCT 2 -->
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <span class="product-label">
-                        NEW
-                    </span>
-
-                    <img src="images/men-product2.jpg"
-                         alt="Men Jacket">
-
-                    <button class="wishlist">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-
+            <!-- Men Accessories Banner -->
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&auto=format&fit=crop" alt="Men Accessories">
+                <div class="category-info">
+                    <p>COMPLETE YOUR LOOK</p>
+                    <h3>ACCESSORIES</h3>
+                    <a href="menaccessories.html" class="shop-now-btn">SHOP NOW →</a>
                 </div>
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        JACKETS
-                    </p>
-
-                    <h3>
-                        Classic Denim Jacket
-                    </h3>
-
-                    <div class="price">
-                        $89.90
-                    </div>
-
-                    <button class="add-cart">
-                        ADD TO CART
-                    </button>
-
-                </div>
-
             </div>
 
-
-            <!-- PRODUCT 3 -->
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <span class="product-label">
-                        BESTSELLER
-                    </span>
-
-                    <img src="images/men-product3.jpg"
-                         alt="Men Jeans">
-
-                    <button class="wishlist">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-
+            <!-- Men New Arrivals Banner -->
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?w=600&auto=format&fit=crop" alt="Men New Arrivals">
+                <div class="category-info">
+                    <p>JUST ARRIVED</p>
+                    <h3>NEW ARRIVALS</h3>
+                    <a href="mennewarrivals.html" class="shop-now-btn">SHOP NOW →</a>
                 </div>
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        JEANS
-                    </p>
-
-                    <h3>
-                        Slim Fit Denim Jeans
-                    </h3>
-
-                    <div class="price">
-                        $79.90
-                    </div>
-
-                    <button class="add-cart">
-                        ADD TO CART
-                    </button>
-
-                </div>
-
             </div>
-
-
-            <!-- PRODUCT 4 -->
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <span class="product-label">
-                        NEW
-                    </span>
-
-                    <img src="images/men-product4.jpg"
-                         alt="Men Sneakers">
-
-                    <button class="wishlist">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-
-                </div>
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        SHOES
-                    </p>
-
-                    <h3>
-                        Casual Everyday Sneakers
-                    </h3>
-
-                    <div class="price">
-                        $99.90
-                    </div>
-
-                    <button class="add-cart">
-                        ADD TO CART
-                    </button>
-
-                </div>
-
-            </div>
-
         </div>
-
-
-        <div class="view-all">
-
-            <a href="mennewarrivals.html"
-               class="btn">
-                VIEW ALL MEN'S PRODUCTS
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= MEN PROMOTION ================= -->
-    <section class="gender-promotion men-promotion">
-
-        <div class="gender-promotion-content">
-
-            <p>
-                MEN'S SPECIAL OFFER
-            </p>
-
-            <h2>
-                UPGRADE YOUR<br>
-                EVERYDAY STYLE
-            </h2>
-
-            <span>
-                Discover premium styles and selected products
-                at special prices.
-            </span>
-
-            <br><br>
-
-            <a href="salesandoffers.html"
-               class="btn">
-                SHOP OFFERS
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= FOOTER ================= -->
-    <footer class="footer">
-
-        <div class="footer-container">
-
-
-            <!-- About -->
-            <div class="footer-column">
-
-                <h3>
-                    RAKESH DESIGNS
-                </h3>
-
-                <p>
-                    Premium fashion for modern lifestyles.
-                    Discover quality clothing, shoes and
-                    accessories designed for you.
-                </p>
-
-                <div class="social-icons">
-
-                    <a href="#">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- Men Links -->
-            <div class="footer-column">
-
-                <h3>
-                    MEN
-                </h3>
-
-                <a href="men.html">
-                    Men Home
-                </a>
-
-                <a href="menclothing.html">
-                    Clothing
-                </a>
-
-                <a href="menshoes.html">
-                    Shoes
-                </a>
-
-                <a href="menaccessories.html">
-                    Accessories
-                </a>
-
-                <a href="mennewarrivals.html">
-                    New Arrivals
-                </a>
-
-            </div>
-
-
-            <!-- Quick Links -->
-            <div class="footer-column">
-
-                <h3>
-                    QUICK LINKS
-                </h3>
-
-                <a href="index.html">
-                    Home
-                </a>
-
-                <a href="aboutus.html">
-                    About Us
-                </a>
-
-                <a href="collections.html">
-                    Collections
-                </a>
-
-                <a href="salesandoffers.html">
-                    Sales & Offers
-                </a>
-
-                <a href="contactus.html">
-                    Contact Us
-                </a>
-
-            </div>
-
-
-            <!-- Contact -->
-            <div class="footer-column">
-
-                <h3>
-                    CONTACT US
-                </h3>
-
-                <p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    Singapore
-                </p>
-
-                <p>
-                    <i class="fa-solid fa-phone"></i>
-                    +65 1234 5678
-                </p>
-
-                <p>
-                    <i class="fa-solid fa-envelope"></i>
-                    info@rakeshdesigns.com
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="footer-bottom">
-
-            <p>
-                © 2026 Rakesh Designs.
-                All Rights Reserved.
-            </p>
-
-        </div>
-
-    </footer>
-
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    </main>
 
 </body>
-
 </html>
+

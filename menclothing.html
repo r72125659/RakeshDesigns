@@ -1,768 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Rakesh Designs - Men's Clothing</title>
-
+    <title>Men's Clothing - Rakesh Designs</title>
     <link rel="stylesheet" href="styles.css">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .product-card {
+            border: 1px solid #e2d9cd;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .product-title {
+            font-size: 1.1rem;
+            margin: 10px 0 5px 0;
+            font-weight: bold;
+        }
+        .price {
+            font-weight: bold;
+            color: #2b2623;
+            margin: 5px 0;
+        }
+        .btn-add {
+            background-color: #2b2623;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
 </head>
-
 <body>
 
-    <!-- Header -->
-    <header class="header">
-
-        <div class="logo">
-            <a href="index.html">RAKESH DESIGNS</a>
-        </div>
-
-        <nav class="navbar">
-
-            <a href="index.html">Home</a>
-
-            <a href="aboutus.html">About Us</a>
-
-            <!-- Collections -->
-            <div class="dropdown">
-
-                <a href="#">
-                    Collections
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-
-                <div class="dropdown-menu">
-
-                    <a href="tshirts.html">T-Shirts</a>
-                    <a href="jackets.html">Jackets</a>
-                    <a href="jeans.html">Jeans</a>
-                    <a href="shoes.html">Shoes</a>
-                    <a href="accessories.html">Accessories</a>
-                    <a href="bags.html">Bags</a>
-
-                </div>
-
-            </div>
-
-            <a href="salesandoffers.html">Sales & Offers</a>
-
-            <!-- Men -->
-            <div class="dropdown">
-
-                <a href="#" class="active">
-                    Men
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-
-                <div class="dropdown-menu">
-
-                    <a href="menshoes.html">Men's Shoes</a>
-                    <a href="menclothing.html">Men's Clothing</a>
-                    <a href="menaccessories.html">Men's Accessories</a>
-                    <a href="mennewarrivals.html">Men's New Arrivals</a>
-
-                </div>
-
-            </div>
-
-            <!-- Women -->
-            <div class="dropdown">
-
-                <a href="#">
-                    Women
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-
-                <div class="dropdown-menu">
-
-                    <a href="womenshoes.html">Women's Shoes</a>
-                    <a href="womenclothing.html">Women's Clothing</a>
-                    <a href="womenaccessories.html">Women's Accessories</a>
-                    <a href="womennewarrivals.html">Women's New Arrivals</a>
-
-                </div>
-
-            </div>
-
-            <a href="contactus.html">Contact Us</a>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sales & Offers</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="womenclothing.html">Women</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
         </nav>
-
-
-        <!-- Header Icons -->
-        <div class="header-icons">
-
-            <i class="fa-solid fa-magnifying-glass"
-                id="searchIcon"></i>
-
-            <i class="fa-regular fa-user"></i>
-
-            <i class="fa-solid fa-bag-shopping"></i>
-
-            <i class="fa-solid fa-bars"
-                id="menuIcon"></i>
-
-        </div>
-
-
-        <!-- Search Box -->
-        <div class="search-box" id="searchBox">
-
-            <input type="text"
-                id="searchInput"
-                placeholder="Search products...">
-
-            <button id="searchButton">
-
-                <i class="fa-solid fa-magnifying-glass"></i>
-
-            </button>
-
-        </div>
-
     </header>
 
+    <main style="padding: 20px;">
+        <h1>Men's Clothing</h1>
+        <p>Explore our classic and modern collection of men's shirts, jackets, and trousers.</p>
 
-    <!-- Page Banner -->
-    <section class="page-banner">
-
-        <div class="page-banner-content">
-
-            <h1>Men's Clothing</h1>
-
-            <div class="breadcrumb">
-
-                <a href="index.html">Home</a>
-
-                <span>/</span>
-
-                <span>Men</span>
-
-                <span>/</span>
-
-                <span>Men's Clothing</span>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Men's Clothing -->
-    <section class="products-section">
-
-        <div class="section-title">
-
-            <h2>Men's Clothing Collection</h2>
-
-            <p>
-                Explore modern men's clothing designed for
-                everyday comfort, style and confidence.
-            </p>
-
-        </div>
-
-
-        <!-- Filter -->
-        <div class="product-filter">
-
-            <div class="filter-left">
-
-                <span>Showing 8 products</span>
-
-            </div>
-
-            <div class="filter-right">
-
-                <label for="sort">Sort By:</label>
-
-                <select id="sort">
-
-                    <option value="default">
-                        Default
-                    </option>
-
-                    <option value="low-high">
-                        Price: Low to High
-                    </option>
-
-                    <option value="high-low">
-                        Price: High to Low
-                    </option>
-
-                    <option value="newest">
-                        Newest
-                    </option>
-
-                </select>
-
-            </div>
-
-        </div>
-
-
-        <!-- Product Grid -->
         <div class="product-grid">
-
-
-            <!-- Product 1 -->
             <div class="product-card">
-
-                <div class="product-image">
-
-                    <img src="images/men-clothing-tshirt.jpg"
-                        alt="Men's Premium T-Shirt">
-
-                    <span class="product-label">
-                        NEW
-                    </span>
-
-                    <button class="wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        T-Shirts
-                    </p>
-
-                    <h3>Men's Premium T-Shirt</h3>
-
-                    <div class="rating">
-                        ★★★★★
-                    </div>
-
-                    <div class="price">
-                        $34.90
-                    </div>
-
-                    <button class="add-cart">
-                        Add to Cart
-                    </button>
-
-                </div>
-
+                <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=600&auto=format&fit=crop" alt="Classic Cotton Shirt">
+                <div class="product-title">Classic Cotton Shirt</div>
+                <div>⭐⭐⭐⭐⭐</div>
+                <div class="price">$49.90</div>
+                <button class="btn-add">Add to Cart</button>
             </div>
 
-
-            <!-- Product 2 -->
             <div class="product-card">
-
-                <div class="product-image">
-
-                    <img src="images/men-clothing-shirt.jpg"
-                        alt="Men's Casual Shirt">
-
-                    <button class="wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        Shirts
-                    </p>
-
-                    <h3>Classic Casual Shirt</h3>
-
-                    <div class="rating">
-                        ★★★★★
-                    </div>
-
-                    <div class="price">
-                        $49.90
-                    </div>
-
-                    <button class="add-cart">
-                        Add to Cart
-                    </button>
-
-                </div>
-
+                <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=600&auto=format&fit=crop" alt="Men Casual Jacket">
+                <div class="product-title">Casual Denim Jacket</div>
+                <div>⭐⭐⭐⭐⭐</div>
+                <div class="price">$89.90</div>
+                <button class="btn-add">Add to Cart</button>
             </div>
 
-
-            <!-- Product 3 -->
             <div class="product-card">
-
-                <div class="product-image">
-
-                    <img src="images/men-clothing-jeans.jpg"
-                        alt="Men's Slim Fit Jeans">
-
-                    <span class="product-label">
-                        SALE
-                    </span>
-
-                    <button class="wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        Jeans
-                    </p>
-
-                    <h3>Men's Slim Fit Jeans</h3>
-
-                    <div class="rating">
-                        ★★★★☆
-                    </div>
-
-                    <div class="price">
-
-                        $59.90
-
-                        <span class="old-price">
-                            $74.90
-                        </span>
-
-                    </div>
-
-                    <button class="add-cart">
-                        Add to Cart
-                    </button>
-
-                </div>
-
+                <img src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908?w=600&auto=format&fit=crop" alt="Slim Fit Chinos">
+                <div class="product-title">Slim Fit Chino Pants</div>
+                <div>⭐⭐⭐⭐⭐</div>
+                <div class="price">$59.90</div>
+                <button class="btn-add">Add to Cart</button>
             </div>
 
-
-            <!-- Product 4 -->
             <div class="product-card">
-
-                <div class="product-image">
-
-                    <img src="images/men-clothing-hoodie.jpg"
-                        alt="Men's Hoodie">
-
-                    <span class="product-label">
-                        NEW
-                    </span>
-
-                    <button class="wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        Hoodies
-                    </p>
-
-                    <h3>Premium Street Hoodie</h3>
-
-                    <div class="rating">
-                        ★★★★★
-                    </div>
-
-                    <div class="price">
-                        $64.90
-                    </div>
-
-                    <button class="add-cart">
-                        Add to Cart
-                    </button>
-
-                </div>
-
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600&auto=format&fit=crop" alt="Basic White Tee">
+                <div class="product-title">Premium Cotton T-Shirt</div>
+                <div>⭐⭐⭐⭐⭐</div>
+                <div class="price">$29.90</div>
+                <button class="btn-add">Add to Cart</button>
             </div>
-
-
-            <!-- Product 5 -->
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <img src="images/men-clothing-jacket.jpg"
-                        alt="Men's Casual Jacket">
-
-                    <button class="wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        Jackets
-                    </p>
-
-                    <h3>Men's Casual Jacket</h3>
-
-                    <div class="rating">
-                        ★★★★★
-                    </div>
-
-                    <div class="price">
-                        $79.90
-                    </div>
-
-                    <button class="add-cart">
-                        Add to Cart
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- Product 6 -->
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <img src="images/men-clothing-polo.jpg"
-                        alt="Men's Polo Shirt">
-
-                    <span class="product-label">
-                        NEW
-                    </span>
-
-                    <button class="wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        Polo Shirts
-                    </p>
-
-                    <h3>Classic Polo Shirt</h3>
-
-                    <div class="rating">
-                        ★★★★☆
-                    </div>
-
-                    <div class="price">
-                        $39.90
-                    </div>
-
-                    <button class="add-cart">
-                        Add to Cart
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- Product 7 -->
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <img src="images/men-clothing-trousers.jpg"
-                        alt="Men's Formal Trousers">
-
-                    <span class="product-label">
-                        SALE
-                    </span>
-
-                    <button class="wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        Trousers
-                    </p>
-
-                    <h3>Modern Formal Trousers</h3>
-
-                    <div class="rating">
-                        ★★★★★
-                    </div>
-
-                    <div class="price">
-
-                        $54.90
-
-                        <span class="old-price">
-                            $69.90
-                        </span>
-
-                    </div>
-
-                    <button class="add-cart">
-                        Add to Cart
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- Product 8 -->
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <img src="images/men-clothing-sweatshirt.jpg"
-                        alt="Men's Sweatshirt">
-
-                    <span class="product-label">
-                        NEW
-                    </span>
-
-                    <button class="wishlist">
-
-                        <i class="fa-regular fa-heart"></i>
-
-                    </button>
-
-                </div>
-
-                <div class="product-info">
-
-                    <p class="product-category">
-                        Sweatshirts
-                    </p>
-
-                    <h3>Classic Cotton Sweatshirt</h3>
-
-                    <div class="rating">
-                        ★★★★★
-                    </div>
-
-                    <div class="price">
-                        $59.90
-                    </div>
-
-                    <button class="add-cart">
-                        Add to Cart
-                    </button>
-
-                </div>
-
-            </div>
-
-
         </div>
-
-    </section>
-
-
-    <!-- Promotional Banner -->
-    <section class="promo-banner">
-
-        <div class="promo-content">
-
-            <h2>Upgrade Your Wardrobe</h2>
-
-            <p>
-                Discover timeless men's fashion and the latest
-                trends at Rakesh Designs.
-            </p>
-
-            <a href="mennewarrivals.html"
-                class="btn">
-                View New Arrivals
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- Newsletter -->
-    <section class="newsletter">
-
-        <div class="newsletter-content">
-
-            <h2>Stay Updated</h2>
-
-            <p>
-                Subscribe to receive men's fashion updates,
-                new arrivals and exclusive offers.
-            </p>
-
-            <form class="newsletter-form">
-
-                <input type="email"
-                    placeholder="Enter your email address"
-                    required>
-
-                <button type="submit">
-                    Subscribe
-                </button>
-
-            </form>
-
-        </div>
-
-    </section>
-
-
-    <!-- Footer -->
-    <footer class="footer">
-
-        <div class="footer-container">
-
-
-            <!-- About -->
-            <div class="footer-column">
-
-                <h3>RAKESH DESIGNS</h3>
-
-                <p>
-                    Discover modern fashion, quality products
-                    and stylish designs for every occasion.
-                </p>
-
-                <div class="social-icons">
-
-                    <a href="#">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fa-brands fa-youtube"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- Quick Links -->
-            <div class="footer-column">
-
-                <h3>Quick Links</h3>
-
-                <a href="index.html">
-                    Home
-                </a>
-
-                <a href="aboutus.html">
-                    About Us
-                </a>
-
-                <a href="collections.html">
-                    Collections
-                </a>
-
-                <a href="salesandoffers.html">
-                    Sales & Offers
-                </a>
-
-                <a href="contactus.html">
-                    Contact Us
-                </a>
-
-            </div>
-
-
-            <!-- Men -->
-            <div class="footer-column">
-
-                <h3>Men</h3>
-
-                <a href="menshoes.html">
-                    Men's Shoes
-                </a>
-
-                <a href="menclothing.html">
-                    Men's Clothing
-                </a>
-
-                <a href="menaccessories.html">
-                    Men's Accessories
-                </a>
-
-                <a href="mennewarrivals.html">
-                    Men's New Arrivals
-                </a>
-
-            </div>
-
-
-            <!-- Contact -->
-            <div class="footer-column">
-
-                <h3>Contact</h3>
-
-                <p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    Singapore
-                </p>
-
-                <p>
-                    <i class="fa-solid fa-phone"></i>
-                    +65 1234 5678
-                </p>
-
-                <p>
-                    <i class="fa-solid fa-envelope"></i>
-                    info@rakeshdesigns.com
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-
-            <p>
-                &copy; 2026 Rakesh Designs.
-                All Rights Reserved.
-            </p>
-
-        </div>
-
-    </footer>
-
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+    </main>
 
 </body>
-
 </html>
